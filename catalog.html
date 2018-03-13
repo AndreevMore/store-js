@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Template</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet">
+    <script src="data/catalog.js"></script>
+    <script async src="js/lodash.min.js"></script>
+    <script async src="js/p_catalog.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container desktop-nav-container">
+            <div class="header-top clearfix">
+                <div class="logo floatLeft">
+                    <h1 id="logo">
+                        <a href="start.html">Template</a>
+                    </h1>
+                    <h1 id="mobile-logo">
+                        <a href="start.html">TL</a>
+                    </h1>
+                </div>
+                <div class="login floatRight">
+                    <a href="#" class="email">E-mail sing up</a>
+                    <a href="shopping-bag.html" class="bag">Bag <span id=bagPriceCount></span><span id=bagItemsCount>(0)</span></a>
+                    <a href="#" class="icon-menu" id="header-menu">  </a>
+                </div>
+            </div>
+            <div class="header-bottom clearfix">
+                <div class="navigation floatLeft">
+                    <nav>
+                        <ul class="headerNav">
+                            <li>
+                                <a href="#">Women</a>
+                            </li>
+                            <li>
+                                <a href="#">Men</a>
+                            </li>
+                            <li>
+                                <a href="#">Handbags</a>
+                            </li>
+                            <li>
+                                <a href="#">Accessories</a>
+                            </li>
+                            <li>
+                                <a href="#">Sale</a>
+                            </li>
+                            <li>
+                                <a href="#">New Arrivals</a>
+                            </li>
+                            <li>
+                                <a href="#">Clearance</a>
+                            </li>
+                            <li>
+                                <a href="#">Store Locator</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="searchHolder floatRight">
+                    <input type="text" placeholder="Style Name" id="searchInput">
+                    <input type="image" src="img/search.png" id="searchButton" alt='search'>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="filter-section">
+        <div class="topMenu">
+            <div class="container">
+                <div class="filter-container ">
+                    <div class="filter-item selected">
+                        <div class="label">Fashion</div>
+                        <div class="value">Casual style</div>
+                        <div class="options">
+                            <div class="option">Not selected</div>
+                            <div class="option">Nail the 90s</div>
+                            <div class="option active">Casual style</div>
+                            <div class="option">New Look</div>
+                            <div class="option">Sport</div>
+                            <div class="option">Vintage</div>
+                            <div class="option">Classical Style</div>
+                        </div>
+                    </div>
+                    <div class="filter-item">
+                        <div class="label">Product type</div>
+                        <div class="value"></div>
+                        <div class="options">
+                            <div class="option">Not selected</div>
+                            <div class="option">Coats &#38; Jacets</div>
+                            <div class="option active">Dresses</div>
+                            <div class="option">Jersey Tops</div>
+                        </div>
+                    </div>
+                    <div class="filter-item">
+                        <div class="label">Color</div>
+                        <div class="value"></div>
+                        <div class="options">
+                            <div class="option">Not selected</div>
+                            <div class="option">Black</div>
+                            <div class="option">Blue</div>
+                            <div class="option">Red</div>
+                            <div class="option">Green</div>
+                            <div class="option">Golden</div>
+                        </div>
+                    </div>
+                    <div class="filter-item selected">
+                        <div class="label">Brand</div>
+                        <div class="value active">Antipodium</div>
+                        <div class="options">
+                            <div class="option">Not selected</div>
+                            <div class="option active">Antipodium</div>
+                            <div class="option">Adidas</div>
+                            <div class="option">New Balance</div>
+                            <div class="option">River Island</div>
+                        </div>
+                    </div>
+                    <div class="filter-item selected">
+                        <div class="label">Size</div>
+                        <div class="value">UK18</div>
+                        <div class="options">
+                            <div class="option">Not selected</div>
+                            <div class="option">UK2</div>
+                            <div class="option active">UK18</div>
+                            <div class="option">UK18L</div>
+                            <div class="option">UK20</div>
+                            <div class="option">UK20L</div>
+                            <div class="option">UK20S</div>
+                            <div class="option">UK22S</div>
+                            <div class="option">UK22</div>
+                        </div>
+                    </div>
+                    <div class="filter-item">
+                        <div class="label">Price range</div>
+                        <div class="value"></div>
+                        <div class="options">
+                            <div class="option">Not selected</div>
+                            <div class="option">To &#163;99</div>
+                            <div class="option">&#163;100-&#163;299</div>
+                            <div class="option">From &#163;300</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="mobile-filter-section">
+        <div class="topMenu">
+            <div class="container">
+                <div class="filter-container clearfix">
+                    <ul>
+                        <li class="label">Fashion<span class="value"></span></li>
+                        <li class="label">Product type<span class="value"></span></li>
+                        <li class="label">Color<span class="value"></span></li>
+                        <li class="label">Brand<span class="value"></span></li>
+                        <li class="label">Size<span class="value"></span></li>
+                        <li class="label">PriceRange<span class="value"></span></li>
+                    </ul>
+                    <a href="#" class="icon-menu" id="filter-menu-button"></a>
+                </div>
+            </div>
+        </div>
+        <div class="bottomMenu">
+            <div class="filter-container-values clearfix">
+                <div class="filter-item">
+                    <span>Fashion</span>
+                    <ul>
+                        <li class="option"><a href="#">Not selected</a></li>
+                        <li class="option"><a href="#">Nail the 90s</a></li>
+                        <li class="option active"><a href="#">Casual style</a></li>
+                        <li class="option"><a href="#">New Look</a></li>
+                        <li class="option"><a href="#">Sport</a></li>
+                        <li class="option"><a href="#">Vintage</a></li>
+                        <li class="option"><a href="#">Classical style</a></li>
+                    </ul>
+                </div>
+                <div class="filter-item">
+                    <span>Product type</span>
+                    <ul>
+                        <li class="option notSelected"><a href="#">Not selected</a></li>
+                        <li class="option"><a href="#">Coats &#38; Jackets</a></li>
+                        <li class="option"><a href="#">Dresses</a></li>
+                        <li class="option"><a href="#">Jersey Tops</a></li>
+                    </ul>
+                </div>
+                <div class="filter-item">
+                    <span>Color</span>
+                    <ul>
+                        <li class="option"><a href="#">Not selected</a></li>
+                        <li class="option"><a href="#">Black</a></li>
+                        <li class="option"><a href="#">Blue</a></li>
+                        <li class="option"><a href="#">Red</a></li>
+                        <li class="option"><a href="#">Green</a></li>
+                        <li class="option"><a href="#">Golden</a></li>
+                    </ul>
+                </div>
+                <div class="filter-item">
+                    <span>Brand</span>
+                    <ul>
+                        <li class="option"><a href="#">Not selected</a></li>
+                        <li class="option"><a href="#">Chi Chi London</a></li>
+                        <li class="option active"><a href="#">Antipodium</a></li>
+                        <li class="option"><a href="#">Adidas</a></li>
+                        <li class="option"><a href="#">New Balance</a></li>
+                        <li class="option"><a href="#">River Island</a></li>
+                        <li class="option"><a href="#">Nike</a></li>
+                    </ul>
+                </div>
+                <div class="filter-item">
+                    <span>Size</span>
+                    <ul>
+                        <li class="option"><a href="#">Not selected</a></li>
+                        <li class="option"><a href="#">UK 2</a></li>
+                        <li class="option active"><a href="#">UK 18</a></li>
+                        <li class="option"><a href="#">UK 18L</a></li>
+                        <li class="option"><a href="#">UK 20</a></li>
+                        <li class="option"><a href="#">UK 20L</a></li>
+                        <li class="option"><a href="#">UK 20S</a></li>
+                        <li class="option"><a href="#">UK 22</a></li>
+                    </ul>
+                </div>
+                <div class="filter-item">
+                    <span>Size</span>
+                    <ul>
+                        <li class="option"><a href="#">Price range</a></li>
+                        <li class="option"><a href="#">Not selected</a></li>
+                        <li class="option"><a href="#">&#163;100-&#163;299</a></li>
+                        <li class="option"><a href="#">From &#163;300</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="items-container">
+        <div class="newItems container clearfix">
+        </div>
+        <div>
+            <button class="mainButton">Show more</button>
+        </div>
+    </section>
+    <section>
+        <div class="banners clearfix">
+            <div class="banner extraBig ">
+                <a href="item.html">
+                    <img src="img/banner_3.jpg" alt="">
+                    <div class="bannerInfo top">
+                        <p>Adidas Blue</p>
+                        <span>For men</span>
+                    </div>    
+                </a>
+            </div>
+            <div class="banner extraSmall">
+                <a href="catalog.html">
+                        <img src="img/banner_4.jpg" alt="">
+                        <div class="bannerInfo bottom ">
+                            <p>Repair Patches</p>
+                            <span>&#163;150.50</span>
+                        </div>
+                    </a>
+            </div>
+            <div class="banner extraSmall">
+                <a href="catalog.html">
+                        <img src="img/banner_5.jpg" alt="">
+                        <div class="bannerInfo bottom">
+                            <p class="active">Sale</p>
+                            <span class="sale">-70%</span>
+                        </div>
+                    </a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-top clearfix">
+                <div class="links  clearfix">
+                    <div class="quickLinks ">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li>
+                                <a href="#">Store locator</a>
+                            </li>
+                            <li>
+                                <a href="#">Gift Cards</a>
+                            </li>
+                            <li>
+                                <a href="#">Size guide</a>
+                            </li>
+                            <li>
+                                <a href="#">About us</a>
+                            </li>
+                            <li>
+                                <a href="#">Support</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="customers">
+                        <h5>Customer Care</h5>
+                        <ul>
+                            <li>
+                                <a href="#">Customer service</a>
+                            </li>
+                            <li>
+                                <a href="#">Track my order</a>
+                            </li>
+                            <li>
+                                <a href="#">Return policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Shipping &#38; delivery</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact us</a>
+                            </li>
+                            <li>
+                                <a href="#">Careers</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contacts clearfix">
+                    <div class="questions clearfix">
+                        <div class="twitter ">
+                            <h5>Questions</h5>
+                            <span>Tweet us  </span>
+                            <a href="#">
+                                <b><strong>@template</strong></b>
+                            </a>
+                        </div>
+                        <div class="phone ">
+                            <h5>Order by phone</h5>
+                            <a href="tel:88004094712">8-800-409-47-12</a>
+                        </div>
+                    </div>
+                    <div class="social clearfix">
+                        <p class="delivery">We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5 days.</p>
+                        <a href="#" id="facebook"></a>
+                        <a href="#" id="twitter"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container clearfix">
+                <div class="copyright">
+                    <p>&#169; 2010-2015, <a href="#">The Template Group inc.</a></p>
+                </div>
+                <div class="share">
+                    <p>
+                        Share
+                        <span> 1 437</span>
+                    </p>
+                </div>
+                <div class="bottom-links">
+                    <ul>
+                        <li><a href="#">Legal notice</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Site map</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
